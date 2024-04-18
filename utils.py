@@ -53,7 +53,8 @@ def ROC(y_test,y_pred):
     plt.plot(fpr[idx],tpr[idx], 'ro')
     plt.legend(loc=4)
     plt.grid()
-    plt.show()
+    #plt.show()
+    plt.close()
     return tr[idx]
     
 def confusion_matrix(target, predicted, perc=False):
